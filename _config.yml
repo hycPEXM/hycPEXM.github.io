@@ -1,6 +1,6 @@
 # Configurations
-title:            Jekyll Gitbook
-longtitle:        Jekyll Gitbook
+title:            hyc web
+longtitle:        hyc web
 author:           hyc
 email:            55644101+hycPEXM@users.noreply.github.com
 description: >
@@ -10,13 +10,13 @@ version:          1.0
 gitbook_version:  3.2.3
 
 url:              'https://hycpexm.github.io'
-baseurl:          '/gitbook-blog'
+# baseurl:          '/gitbook-blog'
 rss:              RSS
 
 toc:
   enabled: true
   h_min: 1
-  h_max: 3
+  h_max: 4
 
 # markdown render engine.
 markdown:         kramdown

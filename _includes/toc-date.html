@@ -15,8 +15,41 @@
             </li>
 
             <li class="divider"></li>
+            <li>
+                <a href="https://github.com/hycPEXM" target="blank" class="gitbook-link">
+                    hycPEXM Github
+                </a>
+            </li>			
+			
+			<li class="divider"></li>
+			<h3 class="category-head">Categories</h3>
+			{% for category in site.categories %}
+				<li>
+				
+				{% capture category_name %}{{ category | first }}{% endcapture %}
+				<!--<li >    
+				{{ category_name }}</li>-->
+				<!--<a name="{{ category_name | slugize }}"></a>-->
+				
+				<a href="{{ site.url}}{{category_name}}" name="{{ category_name | slugize }}" style="font-weight: bolder;"> {{category_name}}  </a>
+				
+				
+				<ul>
+				{% for post in site.categories[category_name] %}
+				
+				  <li><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a></li>
+				
+				{% endfor %}
+				</ul>
+				
 
-            {% assign reversed_posts = site.posts | reverse %}
+				</li>
+			{% endfor %}
+			
+			
+			<li class="divider"></li>
+			<h3 class="category-head">Posts</h3>
+            {% assign reversed_posts = site.posts  %}
 
             {% for post in reversed_posts %}
                 {% if page.url == post.url %}
@@ -35,13 +68,9 @@
                 </li>
             {% endfor %}
 
-            <li class="divider"></li>
+            
 
-            <li>
-                <a href="https://github.com/hycPEXM" target="blank" class="gitbook-link">
-                    hycPEXM Github
-                </a>
-            </li>
+
         </ul>
     </nav>
 </div>
