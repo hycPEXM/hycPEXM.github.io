@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-01-08T03:00:16+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">hyc web</title><subtitle>Build Jekyll site with the GitBook style.
+</subtitle><author><name>hyc</name></author><entry><title type="html">周报1</title><link href="http://localhost:4000/weekly%20reports/2022-01-07-test1.html" rel="alternate" type="text/html" title="周报1" /><published>2022-01-07T00:00:00+08:00</published><updated>2022-01-07T00:00:00+08:00</updated><id>http://localhost:4000/weekly%20reports/test1</id><content type="html" xml:base="http://localhost:4000/weekly%20reports/2022-01-07-test1.html"><![CDATA[<p>没啥</p>]]></content><author><name>hyc</name></author><category term="Weekly Reports" /><summary type="html"><![CDATA[没啥]]></summary></entry><entry><title type="html">Python专栏</title><link href="http://localhost:4000/python/2022-01-07-Python.html" rel="alternate" type="text/html" title="Python专栏" /><published>2022-01-07T00:00:00+08:00</published><updated>2022-01-07T00:00:00+08:00</updated><id>http://localhost:4000/python/Python</id><content type="html" xml:base="http://localhost:4000/python/2022-01-07-Python.html"><![CDATA[<blockquote>
+  <p>一级标题根据yaml front matter取为Python专栏</p>
+</blockquote>
+
+<h2 id="复习">复习</h2>
+
+<p><a href="2022-01-01-final.html">期末复习</a></p>
+
+<h3 id="这是一个三级标题">这是一个三级标题</h3>
+
+<h4 id="这是一个四级标题">这是一个四级标题</h4>]]></content><author><name>hyc</name></author><category term="Python" /><summary type="html"><![CDATA[一级标题根据yaml front matter取为Python专栏]]></summary></entry><entry><title type="html">期末复习</title><link href="http://localhost:4000/python/2022-01-01-final.html" rel="alternate" type="text/html" title="期末复习" /><published>2022-01-01T00:00:00+08:00</published><updated>2022-01-01T00:00:00+08:00</updated><id>http://localhost:4000/python/final</id><content type="html" xml:base="http://localhost:4000/python/2022-01-01-final.html"><![CDATA[<p><a href="https://www.doc88.com/p-105556572442.html?r=1">微机原理复习题目(带答案) - 道客巴巴 (doc88.com)</a></p>
+
+<p><a href="https://www.ruiwen.com/shiti/1033338.html">微机原理试题及答案 (ruiwen.com)</a></p>
+
+<p><a href="https://www.docin.com/p-2194915799.html">微机原理试题集题库(带答案) - 豆丁网 (docin.com)</a></p>
+
+<p><a href="https://www.doc88.com/p-0334731571579.html?s=rel&amp;id=1">微机原理复习题目 (带答案） - 道客巴巴 (doc88.com)</a></p>
+
+<p><a href="https://www.doc88.com/p-9853549059494.html?r=1">微机接口技术与应用_习题集(含答案) - 道客巴巴 (doc88.com)</a></p>
+
+<h2 id="大纲">大纲</h2>
+
+<p><img src="/assets/2022-01-01-final.assets/image-20220105120132171.png" alt="image-20220105120132171" /></p>
+
+<h2 id="第一章微处理器基础">第一章：微处理器基础</h2>
+
+<ul>
+  <li>数值信息的表示：浮点数转换，原码补码，常见字符的ASCII码，汉字编码的原理</li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th>字符</th>
+      <th>ASCII码（American Standard Code for Information Interchange）</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>‘0’</td>
+      <td>48</td>
+    </tr>
+    <tr>
+      <td>‘A’</td>
+      <td>65</td>
+    </tr>
+    <tr>
+      <td>‘a’</td>
+      <td>97</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>补码表示的16位带符号数字8088H除以8</p>
+
+<p>1000 0000 1000 1000 原码 1111 1111 0111 1000   除以8 -111 1111 0111 1000/1000=-111 1111 0111 1= -1111 1110 1111=1000 1111 1110 1111 -&gt; 1111 0000 0001 0001   这个情况比较特殊，刚好能整除，最后的结果相当于原数右移3位，最高位补符号位1</p>
+
+<p>定点除法比较复杂，可以用不恢复余数法（也叫加减交替法；原码/补码除法）</p>
+
+<p><a href="https://wenku.baidu.com/view/76c6ee0d25284b73f242336c1eb91a37f011320e.html">补码除法规则说明 - 百度文库 (baidu.com)</a></p>
+
+<p>同符号的数相减会有进位、不会有溢出？</p>
+
+<p><img src="/assets/2022-01-01-final.assets/image-20220105120009230.png" alt="image-20220105120009230" /></p>
+
+<h2 id="第二章微型计算机原理与体系结构">第二章：微型计算机原理与体系结构</h2>
+
+<ul>
+  <li>冯诺依曼组成原理，改进的哈佛结构，本质区别</li>
+  <li><strong>8086的内核结构，寄存器基本作用，地址线条数，寻址</strong></li>
+  <li><strong>80386的变化，结构特点，分段分页的作用，保护地址，GDTR，LDTR，地址计算</strong></li>
+  <li>CISC和RISC的区别</li>
+  <li>存储字系统金字塔，是什么，为什么</li>
+  <li>流水线是什么，什么是超标量</li>
+  <li>寻址方式</li>
+</ul>
+
+<h2 id="第三章总线与存储">第三章：总线与存储</h2>
+
+<ul>
+  <li>总线的特性、分类、三态逻辑</li>
+  <li>异步通信的原理，双方握手</li>
+  <li>总线的性能指标</li>
+  <li><strong>存储器的分类、存储器的层次</strong></li>
+  <li>静态和动态RAM的比较</li>
+  <li>大小端模式</li>
+  <li><strong>存储器的地址计算</strong></li>
+  <li>存储器的容量扩展</li>
+  <li>存储器和CPU的连接，SRAM和DRAM的区别</li>
+</ul>
+
+<p><a href="https://wenku.baidu.com/view/34c425597275a417866fb84ae45c3b3566ecdd36.html">存储器习题解答 - 百度文库 (baidu.com)</a></p>
+
+<ul>
+  <li>数据总线(data bus) — 传输数据、状态信息(双向、三态)</li>
+  <li>地址总线(address bus) — 传输地址信息(单向、三态)</li>
+  <li>控制总线(control bus) — 传输控制信号(单向)</li>
+</ul>
+
+<p><img src="/assets/2022-01-01-final.assets/image-20220105163709780.png" alt="image-20220105163709780" /></p>
+
+<h3 id="8086存储器分为偶体寄存器与奇体存储器">8086存储器分为偶体寄存器与奇体存储器</h3>
+
+<p><img src="/assets/2022-01-01-final.assets/image-20220105170825601.png" alt="image-20220105170825601" /></p>
+
+<p>该存储器的存储容量为2^16*16bit；A16-19地址引脚是固定的，由高到低分别为1100，地址范围为C0000H到CFFFFH</p>
+
+<p>右边那列由A0选通，存取的是偶数位地址；左边那列由~BHE选中高地址</p>
+
+<p>1.8086cpu访问偶地址的字节单元时，cpu输出A0=0,选中偶体存储器，数据总线的低8位上传输，花费一个总线周期。</p>
+
+<p>2.访问奇地址的字节单元时，输出A0=1, ~BHE低电平，选中奇体存储器，数据在数据总线的高8位上传输，花费一个总线周期。</p>
+
+<p>3.访问偶地址开始的一个字单元时，此时输出A0=0, ~BHE=0，两个存储器同时被选中，数据线的低8位与高8位同时传输，因此，对所有位于偶地址的字单元，8086只需要一个总线周期。</p>
+
+<p>4.访问奇地址开始的一个字单元时，第一个总线周期，cpu输出A0=1，~BHE=0,奇体存储器被选中，奇体存储器中低字节数据在数据总线的高8位上传输，第二个总线周期，cpu=A0, ~BHE=1，偶体存储器被选中，数据在数据总线的低8位上传输。</p>
+
+<h3 id="cache">Cache</h3>
+
+<ul>
+  <li>直接映射
+主存地址格式：主存区号-区内块号-块内地址
+Cache地址格式：区内块号-块内地址</li>
+  <li>全相连映射
+主存：主存块号-块内地址
+Cache：Cache块号-块内地址</li>
+  <li>n路（即每组包含n块）组相联映射
+主存：主存区号-区内块号-块内地址
+Cache：Cache组号-块号-块内地址</li>
+</ul>
+
+<p><img src="/assets/2022-01-01-final.assets/image-20220105225454278.png" alt="image-20220105225454278" /></p>
+
+<p>DRAM 行列复用，相当于有9*2=18根地址线，所以最大容量为$2^{18}*8bit$=256KB</p>
+
+<p>地址/数据总线复用的情况下，存储器地址线和CPU地址线引脚<u>需通过地址锁存器相连</u></p>
+
+<p><img src="/assets/2022-01-01-final.assets/image-20220106093445091.png" alt="image-20220106093445091" /></p>
+
+<p>选C，为什么？</p>
+
+<p><img src="/assets/2022-01-01-final.assets/image-20220106093505275.png" alt="image-20220106093505275" /></p>
+
+<p>选A，内部中断优先级最高？</p>
+
+<p><img src="/assets/2022-01-01-final.assets/image-20220106123229383.png" alt="image-20220106123229383" /></p>
+
+<p><img src="/assets/2022-01-01-final.assets/image-20220106123243355.png" alt="image-20220106123243355" /></p>
+
+<h2 id="第四章数据传输与输入输出接口">第四章：数据传输与输入输出接口</h2>
+
+<ul>
+  <li>数据传输方式：查询，中断，DMA，三种方式的特点，区别</li>
+  <li>中断控制器芯片8259的基本特点，多片级联，优先级，屏蔽，中断响应的周期</li>
+  <li><strong>输入输出接口（重点）</strong>
+    <ul>
+      <li><strong>8253定时计数器</strong>，初始化编程，给命令</li>
+      <li>复习一下作业</li>
+      <li><strong>8255并行接口芯片</strong>，三种工作方式特点
+        <ul>
+          <li>简易键盘显示接口的原理</li>
+          <li>如何获取键盘的键值：汇编、c</li>
+          <li>设备驱动</li>
+        </ul>
+      </li>
+      <li>串行接口芯片
+        <ul>
+          <li>异步通信字框格式</li>
+          <li>8251的基本原理，方式字</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="第五章嵌入式">第五章：嵌入式</h2>
+
+<ul>
+  <li>什么是嵌入式系统</li>
+  <li>实时系统的概念</li>
+  <li>主流处理器架构
+    <ul>
+      <li>补充：RISC-V</li>
+    </ul>
+  </li>
+  <li>软硬件层次的结构</li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th>特性</th>
+      <th>tmpfs</th>
+      <th>ramfs</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>达到空间上限时继续写入</td>
+      <td>提示错误信息并终止</td>
+      <td>可以继续写尚未分配的空间</td>
+    </tr>
+    <tr>
+      <td>是否固定大小</td>
+      <td>是</td>
+      <td>否</td>
+    </tr>
+    <tr>
+      <td>是否使用swap</td>
+      <td>是</td>
+      <td>否</td>
+    </tr>
+    <tr>
+      <td>具有易失性</td>
+      <td>是</td>
+      <td>是</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="第六章嵌入式实验">第六章：嵌入式实验</h2>
+
+<ul>
+  <li>实验内容
+    <ul>
+      <li>Framebuffer的画图原理</li>
+      <li>显示屏和触摸屏的坐标转换</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="第七章linux设备驱动">第七章：linux设备驱动</h2>
+
+<ul>
+  <li>设备驱动和应用程序的区别、内核模块的基本结构</li>
+  <li>三种类型的设备</li>
+  <li>Makefile的结构，相关命令，<code class="language-plaintext highlighter-rouge">insmod</code>等</li>
+  <li>注册字符型设备的函数，<code class="language-plaintext highlighter-rouge">mknod</code>命令</li>
+  <li>文件操作结构体</li>
+  <li><code class="language-plaintext highlighter-rouge">ioctl</code>函数的用法</li>
+</ul>
+
+<p><img src="/assets/2022-01-01-final.assets/image-20220105230531197.png" alt="image-20220105230531197" /></p>
+
+<p>字符设备驱动大致框架</p>
+
+<pre><code class="language-C">
+
+#include &lt;linux/module.h&gt; 
+#include &lt;linux/init.h&gt;
+#include &lt;linux/fs.h&gt;
+#include &lt;linux/uaccess.h&gt;  /* for put_user */  //copy_to_user
+
+
+/*
+//自定义初始化和退出
+int my_init(void);
+void my_exit(void);
+module_init(my_init);
+module_exit(my_exit);
+*/
+
+int init_module(void)
+{
+    //注册
+int register_chrdev(unsigned int major, const char *name, struct file_operations *fops);    
+    unsigned Major = register_chrdev(0, DEVICE_NAME, &amp;fops); //0代表由系统自动分配主设备号，
+	//否则给出一个正整数就表示主设备号
+}
+
+void cleanup_module(void)
+{
+    int unregister_chrdev(unsigned int major, const char *name);
+}    
+    
+int device_open(struct inode *, struct file *);
+int device_release(struct inode *, struct file *);
+ssize_t device_read(struct file *, char *, size_t, loff_t *);
+ssize_t device_write(struct file *, const char *, size_t, loff_t *);
+long device_ioctl(struct file *, unsigned int,
+unsigned long);
+
+/*
+unsigned long copy_to_user(void __user *to,const void *from,unsigned long count); //将数据从内核拷贝至用户空间，用于read操作 
+unsigned long copy_from_user(void *to,const void __user *from,unsigned long count); //将数据从用户空间拷贝到内核中，用于write操作
+*/
+
+struct file_operations fops = {
+          read: device_read,
+          write: device_write,
+          open: device_open,
+          release: device_release,
+    	  unlocked_ioctl: device_ioctl
+       };
+
+</code></pre>
+
+<h2 id="例题">例题</h2>
+
+<p><img src="/assets/2022-01-01-final.assets/image-20220104204828551.png" alt="image-20220104204828551" /></p>
+
+<p><img src="/assets/2022-01-01-final.assets/image-20220104205349855.png" alt="image-20220104205349855" /></p>
+
+<h2 id="8255键盘">8255键盘</h2>
+
+<p><a href="https://www.docin.com/p-1861582404.html">《微机系统与接口》第八章 习题课（键盘-8255a行扫描法） - 豆丁网 (docin.com)</a></p>
+
+<pre><code class="language-assembly">
+8255扫描键盘、显示程序
+利用8255可编程并行口做一个扫描键盘实验，
+把按键输入的键码，显示在由8279控制的七段数码管上。
+8255PA口做键盘输入线，PB口作扫描线。
+
+;数据指针（DPTR）是80C51（属于MCS-51系列单片机） 中一个功能比较特殊的寄存器。
+;这好像是单片机的汇编程序
+
+D8255 EQU 8506H ;8255状态/数据口地址
+D8255A EQU 8500H ;8255 PA口地址
+D8255B EQU 8502H ;8255 PB口地址
+Z8279 EQU 8701H ;8279状态口地址
+D8279 EQU 8700H ;8279数据口地址
+DISPTR EQU 08H ;当前显示位置
+KEYVAL EQU 09H ;读到的键码
+ORG 0000H
+LJMP START
+ORG 0040H
+MAIN:
+MOV SP,#60H
+LCALL DELAY ;延时
+MOV DISPTR,#30H ;显示缓冲区头指针
+MOV DPTR,#D8255
+MOV A,#90H ;置8255状态
+;方式0,PB,PC口输出,PA口输入
+MOVX @DPTR,A
+MOV DPTR,#Z8279 ;置8279命令字
+MOV A,#0D3H
+MOVX @DPTR,A ;清LED显示
+MOV A,#00H
+MOVX @DPTR,A
+MOV A,#38H
+MOVX @DPTR,A
+MOV A,#0D1H
+KB_DIS:
+LCALL RD_KB ;读键盘
+MOV A,#0FFH
+CJNE A,KEYVAL,DISBUF ;判读到键
+SJMP KB_DIS ;没有则继续读键
+DISBUF:
+LCALL DISP ;把键移入显存
+LCALL DELAY ;延时消抖
+LCALL DELAY
+SJMP KB_DIS
+DISP: ;显存依次前移
+MOV R1,#31H ;在最后加入新键值
+MOVE:
+MOV A,@R1
+DEC R1
+MOV @R1,A
+INC R1
+INC R1
+CJNE R1,#38H,MOVE
+MOV 37H,KEYVAL
+MOV KEYVAL,#0FFH
+MOV DPTR,#Z8279
+MOV A,#90H
+MOVX @DPTR,A
+MOV R0,#08H
+MOV R1,#30H
+MOV DPTR,#D8279
+LP: MOV A,@R1
+MOVX @DPTR,A
+INC R1
+DJNZ R0,LP
+RET
+RD_KB: ;键盘扫描
+MOV A,#02H ;扫描第一行
+MOV DPTR,#D8255B
+MOVX @DPTR,A
+MOV DPTR,#D8255A
+MOVX A,@DPTR
+MOV R1,#00H
+CJNE A,#0FFH,KEYCAL ;判键是否按下
+MOV A,#01H ;扫描第二行
+MOV DPTR,#D8255B
+MOVX @DPTR,A
+MOV DPTR,#D8255A
+MOVX A,@DPTR
+MOV R1,#08H
+CJNE A,#0FFH,KEYCAL
+SJMP NOKEY ;无键按下
+KEYCAL: ;计算键码
+MOV R0,#08H
+SHIFT:
+RRC A
+JNC CALC
+INC R1
+DJNZ R0,SHIFT
+CALC: ;换算显示码
+MOV DPTR,#DL_DAT
+MOV A,R1
+MOVC A,@A+DPTR
+MOV KEYVAL,A
+RET
+NOKEY: MOV KEYVAL,#0FFH ;返回无键标志
+RET
+DELAY: MOV R0,#0H ;延时子程序
+DELAY1: MOV R1,#0H
+DJNZ R1,$
+DJNZ R0,DELAY1
+RET
+DL_DAT: DB 3FH,06H,5BH,4FH,66H,6DH,7DH,07H ;0,1,2,3,4,5,6,7
+DB 7FH,6FH,77H,7CH,39H,5EH,79H,71H ;8,9,A,B,C,D,E,F
+END
+</code></pre>
+
+<pre><code class="language-assembly">PORT_A EQU 0FF9H;8255A端口地址
+PORT_B EQU 0FFBH;8255B端口地址
+PORT_CTL EQU 0FFFH;8255C端口地址
+;数据段定义,键盘扫描表
+DATA	SEGMENT	
+; 
+TABLE DB 77H,7B,7D,7E,0B7H,0BBH,0BDH,0BEH
+	  DB 0D7H,0DBH,0DDH,0DEH,0E7H,0EBH,0EEH
+DATA ENDS
+;堆栈段
+STACK SEGMENT	STACK
+		DW 50 DUP(0)
+TOP_STACK LABEL	WORD	
+STACK ENDS
+;代码段
+CODE SEGMENT	
+	ASSUME	CS:CODE,DS:DATA,SS:STACK
+MAIN: MOV AX,STACK
+	MOV DX,AX;
+	LEA	SP	TOP_STACK
+	MOV AX,DATA
+	MOV DX,AX
+;初始化8255A输出BC输入
+MOV DX, PROT_CTL
+MOV AL,10001011B
+OUT DX,AL	
+;向每一行清0
+MOV	AL,0
+MOV DX,PORR_A
+OUT DX,AL
+MOV DX,PORT_B
+;读列看是否有键被按下
+WAIT_OPEN:
+IN AL,DX
+AND AL,0FH
+CMP	AL,0FH
+JNE WAIT_OPEN
+WAIT_PRES:
+IN AL,DX
+AND AL,0FH
+CMP	AL,0FH
+JE WAIT_PRES	
+MOV CX 16EAH
+DELAY: LOOP DELAY
+IN AL,DX
+AND AL,0FH
+CMP AL,0FH
+JNZ WAIT_PRES
+;键还是被压着,确定哪一个
+MOV AL,0FEH
+MOV CL,AL
+NEXT_ROW:MOV DX,PORT_A
+		OUT DX,AL
+		MOV DX,PORT_B
+		IN AL,DX
+		AND AL,0FH
+		CMP AL,0FH
+		JNE ENCODE
+		ROL	CL,01
+		MOV AL,CL
+		JMP NEXT_ROW	
+;找到了一对低电平
+ENCODE:
+	MOV BX,000FH
+	IN AL,DX
+NEXT_TRY:CMP AL,TABLE[BX]
+		JE DONE
+		DEC BX
+		JNS NEXT_TRY
+		MOV AH,01H
+		JMP EXIT
+
+DONE:
+	MOV AL,BL
+	MOV AH,00
+
+EXIT: HLT	
+CODE	ENDS
+	END
+
+</code></pre>]]></content><author><name>hyc</name></author><category term="Python" /><summary type="html"><![CDATA[微机原理复习题目(带答案) - 道客巴巴 (doc88.com)]]></summary></entry></feed>
